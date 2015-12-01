@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <center>
+      <HBox alignment="CENTER" prefHeight="123.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Login">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="loginText" prefHeight="31.0" prefWidth="108.0">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="password">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordText" prefHeight="31.0" prefWidth="107.0">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="loginbutton" mnemonicParsing="false" text="Login">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" text="Cancel">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></Button>
+            <Button fx:id="register" mnemonicParsing="false" text="Register" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label text="Beer whiskey festival" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="25.0" />
+         </BorderPane.margin></Label>
+   </top>
+</BorderPane>

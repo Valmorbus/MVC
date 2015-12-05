@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class UserList {
 
 	ArrayList<User> userList = new ArrayList<User>();
-	File file = new File("C:/Users/borgs_000/workspace/BeerWhiskey/UserList.txt");
-
+	File file = new File("UserList.txt");
+	
 	public void saveUserList(User user) {
 		addToList();
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
